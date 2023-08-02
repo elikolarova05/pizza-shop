@@ -1,67 +1,11 @@
-
-.background-fade {
-    /* Set the initial background gradient */
-    position: absolute;
-    top: 90px;
-    left: 0;
-    height: 500px;
-    width: 100%;
-    background: linear-gradient(to right, rgb(155, 84, 18), rgb(155, 84, 18), rgba(155, 84, 18, 0.813), rgba(0, 0, 0, 0))!important;
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-video {
-    top: 190px;
-    margin-top: 90px;
-    right: 0;
-    height: 491px;
-    padding-bottom: 50px;
+    header {
+    background-color: rgb(248, 220, 186);
     
 }
-.background-fade h1 {
+header a{
     color: white;
-    margin-left: 40px;
+    font-size: 25px;
 }
-
-.menu {
-   display: grid;
-   justify-content: center;
-    font-family: 'Cabin Sketch', cursive;
-    color: rgb(255, 153, 0);
-    font-size: 2rem;
-    margin-top: 0px;
-   
-}
-
-
-.content {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-direction: row;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 0px;
-
-}
-.content h3 {
-    font-family: 'Cabin Sketch', cursive;
-    color: rgb(255, 153, 0);
-}
- .section{
-    border-radius: 7%;
-    text-align: center;
-    padding: 10%;
-    box-shadow: -5px 3px 5px burlywood;
-    background-color: rgb(243, 243, 245);
-    
-}
-#four button{
-    margin-top: 15px;
-}
-#seven button{
-    margin-top: 33px;
-}
-
-
-  
- 
