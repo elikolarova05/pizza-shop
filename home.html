@@ -1,32 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pizzeli</title>
-        <link rel="stylesheet" href="/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizzeli</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/logo.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(223, 131, 3);">
+        <div class="container-fluid" style="background-color: rgba(223, 131, 3); margin-top: 0%;">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" width="25%" height="auto" style="margin-left: 30%;">
+            </a>
+            <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup" style="font-size: 30px;">
+                <div class="navbar-nav position-absolute top-50 start-50 translate-middle gap-5 fs-4">
+                    <a class="nav-link" style="font-family: 'Cabin Sketch'; color: white;" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" style="font-family: 'Cabin Sketch'; color: white;" href="#menu">Menu</a>
+                    <a class="nav-link" style="font-family: 'Cabin Sketch'; color: white;" href="#about">About us</a>
                    
-                  </div>
                 </div>
-              </nav>
-        </header>
-    </body>
-    
-    <footer>
+                
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="fs-1 w-100 h-100 t-0" style="position: absolute; background: linear-gradient(to right, rgb(185, 89, 5), rgba(185, 89, 5, 0.885), rgba(255, 255, 255, 0)); z-index: 2;">A Culinary Symphony of Taste and Tradition.</div>
+        <video style="position: relative; object-fit: cover; z-index: 1;" width="100%" src="/images/mixkit-three-different-types-of-pizza-29311-large.mp4" autoplay muted loop>The pizza</video>
+    </section>
 
-    </footer>
+    <section class="container-fluid fs-1 text-center mt-4" id="menu">Discover our menu</section>
+    <div class="row row-cols-1 row-cols-md-4 g-4 m-3 text-center">
+        <div class="col">
+            <div class="card mb-1 h-70 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+            <img src="/images/margherita.png" class="card-img-top p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch'; color: rgb(255, 132, 0);">Margherita</h5>
+              <p class="card-text">Tomato sauce, mozzarella, extra mozzarella, basil(optional)</p>
+              <a href="#" class="btn" style="background: linear-gradient(to bottom, orange, orange);">Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-70 mb-1 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+            <img src="/images/1298large.png" class="card-img-top p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch'; color: rgb(255, 132, 0);">Barbeque Pizza</h5>
+              <p class="card-text">Barbeque sauce, mozzarella, bacon, tender chicken, extra mozzarella</p>
+              <a href="#" class="btn" style="background: linear-gradient(to right bottom, rgb(255, 248, 146), rgb(255, 177, 32));">Add</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-70 mb-1 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+            <img src="/images/1313large.png" class="card-img-top p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch'; color: rgb(255, 132, 0);">Hawaii Pizza</h5>
+              <p class="card-text">Tomato sauce, mozzarella, smoked ham, pineapple, extra mozzarella</p>
+              <a href="#" class="btn" style="background: linear-gradient(to right bottom, rgb(255, 248, 146), rgb(255, 177, 32));">Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-70 mb-1 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+            <img src="/images/1535large.png" class="card-img-top p-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch';  color: rgb(255, 132, 0);">Burger Pizza</h5>
+              <p class="card-text">Barbecue sauce, mozzarella, caramelized onion, chicken fillet, tomatoes, burger sauce</p>
+              <a href="#" class="btn" style="background: linear-gradient(to right bottom, rgb(255, 248, 146), rgb(255, 177, 32));">Add</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-70 mb-1 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+              <img src="/images/1661large.png" class="card-img-top p-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch'; color: rgb(255, 132, 0);">Gyros Pizza</h5>
+                <p class="card-text">Tomato sauce, onion, mozzarella, gyros chicken, fresh tomatoes, yoghurt sauce</p>
+                <a href="#" class="btn" style="background: linear-gradient(to right bottom, rgb(255, 248, 146), rgb(255, 177, 32));">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-70 mb-1 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+              <img src="/images/pepperoni.png" class="card-img-top p-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch'; color: rgb(255, 132, 0);">Pepperoni Pizza</h5>
+                <p class="card-text">Tomato sauce,cheese, mozzarella, extra mozzarella, pepperoni, extra pepperoni (optional)</p>
+                <a href="#" class="btn" style="background: linear-gradient(to right bottom, rgb(255, 248, 146), rgb(255, 177, 32));">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-70 mb-1 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+              <img src="/images/vegeterian.png" class="card-img-top p-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch'; color: rgb(255, 132, 0);">Vegeterian pizza</h5>
+                <p class="card-text">Tomato sauce, mozzarella, olives, green peppers, onions, tomatoes, mushrooms</p>
+                <a href="#" class="btn" style="background: linear-gradient(to right bottom, rgb(255, 248, 146), rgb(255, 177, 32));">Add</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-70 mb-1 border-light-subtle bg-light-subtle shadow p-3 mb-5 rounded">
+              <img src="/images/vegeterian.png" class="card-img-top p-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fs-4" style="font-family: 'Cabin Sketch'; color: rgb(255, 132, 0);">Vegeterian pizza</h5>
+                <p class="card-text">Tomato sauce, mozzarella, olives, green peppers, onions, tomatoes, mushrooms</p>
+                <a href="#" class="btn" style="background: linear-gradient(to right bottom, rgb(255, 248, 146), rgb(255, 177, 32));">Add</a>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+<footer  style="background: linear-gradient(to bottom right, rgba(255, 200, 0, 0.576), rgb(255, 123, 0))">
+    <div class="container my-5 mb-0 w-100%"  >
+        <footer class="tetx-start text-white">
+          <div class="container p-4 pb-0">
+            <section class="">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Pizzeli
+                  </h6>
+                  <p>
+                    "Pizzeli: A Culinary Symphony of Taste and Tradition. At Pizzeli, we bring you the heart and soul of authentic pizza craftsmanship. Our delectable creations are born from the finest ingredients and a passion for perfecting every slice.
+                  </p>
+                </div>
+      
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Menu</h6>
+                  <p>
+                    <a class="text-white">Pizzas</a>
+                  </p>
+                  <p>
+                    <a class="text-white">Pasta</a>
+                  </p>
+                  <p>
+                    <a class="text-white">Desserts</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+               
+      
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                  <p><i class="fas fa-home mr-3"></i> Central park, Burgas, Bulgaria</p>
+                  <p><i class="fas fa-envelope mr-3"></i> pizzeli@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 08 234 567 88</p>
+                </div>
+              </div>
+            </section>
+    
+            <hr class="my-3 border-3">
+            <section class="p-3 pt-0">
+              </div>
+            </section>
+          </div>
+        </footer>
+      </div>
+</footer>
 </html>
